@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        text-align: center; /* Center-align all content */
+      }
+
+      .navbar {
+        text-align: center; /* Center-align the navigation bar */
+      }
+
+      /* Center-align the form elements */
+      form {
+        margin: 0 auto; /* Horizontal centering */
+        text-align: left; /* Reset text-align for form contents */
+        max-width: 400px; /* Adjust this width to your preference */
+      }
+
+      .contact {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <h2>Contact Information</h2>
+    <p>Email: zuhair@comsats.com</p>
+    <p>Phone: +921234567890</p>
+
+    <h2 class="contact">Contact Form</h2>
+    <form action="#" method="post">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Message/Question:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
