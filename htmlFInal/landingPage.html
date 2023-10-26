@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <style>
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 100px;
+      }
+
+      .topnav a:hover {
+        background-color: #04aa6d;
+        text-decoration: none;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      #myCarousel {
+        max-width: 100%;
+        height: 60vh;
+        overflow: hidden;
+      }
+
+      .carousel-inner {
+        height: 100%;
+      }
+
+      .carousel-inner .carousel-item {
+        height: 100%;
+      }
+
+      .carousel-inner img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+      }
+
+      .article {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .article-content {
+        flex: 1;
+        display: flex;
+      }
+
+      .article-content img {
+        width: 90%;
+        height: 90%;
+      }
+      .link-group {
+        text-decoration: none;
+        color: #000;
+      }
+      .links a {
+        color: #447e26;
+      }
+      .box {
+        background-color: #666666;
+        flex: 1;
+        display: flex;
+      }
+      .box2 {
+        background-color: #666666;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+      }
+      .search-input {
+        color: white;
+      }
+      .search-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .search-input {
+        padding-right: 50px;
+      }
+
+      .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <button
+        type="submit"
+        class="search-button"
+        style="background-color: #04aa6d"
+      >
+        Submit
+      </button>
+    </div>
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Admission</a>
+      <a href="#">Faculity</a>
+      <a href="#">Examination</a>
+      <a href="#">Alumni</a>
+      <a href="#">Journals</a>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://m.media-amazon.com/images/I/71gE9UBFlkL._AC_UF1000,1000_QL80_.jpg"
+            alt="Image 1"
+          />
+          <div class="carousel-caption">
+            <h3>Slide 1</h3>
+            <p>Description of Slide 1.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://mb.cision.com/Public/14247/2902071/856b720fb81856ec_org.jpg"
+            alt="Image 2"
+          />
+          <div class="carousel-caption">
+            <h3>Slide 2</h3>
+            <p>Description of Slide 2.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.dollsofindia.com/images/p/nature-posters/nature-picture-UJ73_l.jpg"
+            alt="Image 3"
+          />
+          <div class="carousel-caption">
+            <h3>Slide 3</h3>
+            <p>Description of Slide 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="links" style="display: inline">
+      <a href="https://uok.edu.pk/alumni/index.php">Alumni registration</a>,
+      <a href="https://forms.gle/fbVyyN97D3c45mzXA"
+        >Official Students Societies</a
+      >,
+      <a href="https://pk.linkedin.com/pub/university-of-karachi/b8/bbb/986"
+        >View UoK's profile</a
+      >
+
+      <a
+        href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fuok.edu.pk%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=University%20of%20Karachi%20%3A%20Welcome&url=https%3A%2F%2Fuok.edu.pk%2F&via=infouok"
+        target="_blank"
+      >
+        <img
+          src="https://cdn.wccftech.com/wp-content/uploads/2020/07/Twitter.jpg"
+          alt="Twitter"
+          width="100"
+          height="25"
+      /></a>
+
+      <a href="https://www.facebook.com/kutimes" target="_blank">
+        <img
+          src="https://medyo.github.io/assets/images/facebook_connect_button.png"
+          alt="Connect on Facebook"
+          width="100"
+          height="40"
+      /></a>
+    </div>
+
+    <div class="box">
+      <div style="flex: 0.2; background-color: #666666"></div>
+      <div style="flex: 0.8; background-color: #666666">
+        <p>
+          At the time of creation of Pakistan as a sovereign state in 1947,
+          means for higher education and research were negligible. Responding to
+          the impending requirement the University of Karachi was established in
+          1951 ::<a href="https://uok.edu.pk/our-history.php">Read More</a>
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="bottom.png" alt="Bottom Image" width="100%" />
+    </div>
+    <div class="box2">
+      <div style="flex: 0.25; background-color: red"></div>
+      <div style="flex: 0.25; background-color: blue"></div>
+      <div style="flex: 0.25; background-color: gold"></div>
+      <div style="flex: 0.25; background-color: gray"></div>
+    </div>
+  </body>
+</html>
